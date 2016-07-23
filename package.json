@@ -1,0 +1,97 @@
+{
+    "name": "navigation-helper",
+    "displayName": "Navigation Helper",
+    "description": "Trace codes easily with recorded tracks of related files",
+    "version": "0.0.1",
+    "publisher": "jaydenlin",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "icon": "images/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jaydenlin/navigation-helper"
+    },
+    "galleryBanner": {
+        "color": "#22995d",
+        "theme": "dark"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.saveToTrack",
+        "onCommand:extension.changeTrack",
+        "onCommand:extension.editCurrentTrackName",
+        "onCommand:extension.showCurrentTrackHistory",
+        "onCommand:extension.clearAllHistoryFromCurrentTrack",
+        "onCommand:extension.clearOneHistoryFromCurrentTrack",
+        "onCommand:extension.clearAllHistoryFromAllTracks"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.saveToTrack",
+            "title": "Navigation Helper: Save To Track"
+        },
+        {
+            "command": "extension.changeTrack",
+            "title": "Navigation Helper: Show Track Menu"
+        },
+        {
+            "command": "extension.editCurrentTrackName",
+            "title": "Navigation Helper: Edit Current Track Name"
+        },
+        {
+            "command": "extension.showCurrentTrackHistory",
+            "title": "Navigation Helper: Show Current Track History"
+        },
+        {
+            "command": "extension.clearAllHistoryFromCurrentTrack",
+            "title": "Navigation Helper: Clear All History From Current Track"
+        },
+        {
+            "command": "extension.clearOneHistoryFromCurrentTrack",
+            "title": "Navigation Helper: Clear One History From Current Track"
+        },
+        {
+            "command": "extension.clearAllHistoryFromAllTracks",
+            "title": "Navigation Helper: Clear All History From All Tracks"
+        }],
+        "keybindings": [
+        {
+            "command": "extension.saveToTrack",
+            "key": "ctrl+m",
+            "mac": "cmd+m",
+            "when": "editorTextFocus"
+        },
+        {
+            "command": "extension.showCurrentTrackHistory",
+            "key": "ctrl+h",
+            "mac": "cmd+h",
+            "when": "editorTextFocus"
+        },
+        {
+            "command": "extension.changeTrack",
+            "key": "ctrl+shift+m",
+            "mac": "cmd+shift+m",
+            "when": "editorTextFocus"
+        },
+        {
+            "command": "extension.editCurrentTrackName",
+            "key": "ctrl+shift+,",
+            "mac": "cmd+shift+,",
+            "when": "editorTextFocus"
+        }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.5",
+        "vscode": "^0.11.0"
+    }
+}
