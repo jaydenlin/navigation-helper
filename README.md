@@ -6,9 +6,8 @@ ext install navigation-helper
 ```
   
 ## Concept
-Developers offen trace codes back and forth in the editor,  
+Developers offen trace codes back and forth in the editor, 
 but without an effient way to `record the tracks of opened/related files`.    
-It's common that you're working on both new features developmets and bug trackings in a project.
 
 For exmaple, for tracing `Bug 111`, you may open several files like `File 1`, `File 3` ... etc and look aroud.   
 But you fail to find the root cause. Then, suddenly you get a ticket about `Bug 112` with high priority.  
@@ -18,8 +17,7 @@ It's tedious to record the related files manully. Like the following image shows
 <img src="http://i.imgur.com/f8HceeJr.png" width="500"/>
 
 This extension helps you organize the file list into `track-based` in the editor.   
-We called `Bug 111` as a `Track`,  
-And called `File 1`, `File 3` ... etc as a `History`.  
+We called `Bug 111` as a `Track`, and called `File 1`, `File 3` ... etc as a `History`.    
 <img src="http://i.imgur.com/ZQ0ueOY.png" width="500"/>
 
 ## Highlight
@@ -30,8 +28,9 @@ And called `File 1`, `File 3` ... etc as a `History`.
 
 ## Demo
 ### 1. Add a file (`History`) into current `Track`  
-Press `cmd+m` (`ctrl+m`), also if you've selected the words. it will be record too.  
-You can see the `Save to [ Track 0 ]` message on status bar.  
+Press `cmd+m` (`ctrl+m`), You can see the `Save to [ Track 0 ]` message on status bar.   
+also if you've selected the words before press the `cmd+m` (`ctrl+m`). it will be record too.    
+ 
 ![IDE](http://i.giphy.com/l0HlLXmnTdxeSqVr2.gif)   
 
 The following image illustrates what the demo did.  

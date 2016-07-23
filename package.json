@@ -2,7 +2,7 @@
     "name": "navigation-helper",
     "displayName": "Navigation Helper",
     "description": "Trace codes easily with recorded tracks of related files",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "publisher": "jaydenlin",
     "engines": {
         "vscode": "^1.0.0"
@@ -13,7 +13,7 @@
         "url": "https://github.com/jaydenlin/navigation-helper"
     },
     "galleryBanner": {
-        "color": "#22995d",
+        "color": "#1e415e",
         "theme": "dark"
     },
     "categories": [
