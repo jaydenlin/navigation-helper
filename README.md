@@ -1,8 +1,10 @@
 # [Navigation Helper](https://github.com/jaydenlin/navigation-helper) 
 > Trace codes easily with recorded tracks of related files in [Visual Studio Code](https://code.visualstudio.com/)!
+
 ```
 ext install navigation-helper
 ```
+  
 ## Concept
 Developers offen trace codes back and forth in the editor,  
 but without an effient way to `record the tracks of opened/related files`.    
