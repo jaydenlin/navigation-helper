@@ -7,6 +7,7 @@ var tracks:Array<Track> = [];
 var trackLimit = 10;
 var historyLimit = 20;
 var currentTrackIndex = 0;
+var path = require("path");
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -148,7 +149,7 @@ function saveToTrack(tracks:Array<Track>) {
     var lineNumber = editor.selection.active.line + 1;
     var newHistory:NavigationHistory = { 
            description: selectedText, 
-           label: doc.fileName +' : '+ lineNumber, 
+           label: path.basename(doc.fileName) +' : '+ lineNumber, 
            detail: doc.fileName,
            filePath : doc.fileName,
            lineNumber: lineNumber,
