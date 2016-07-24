@@ -20,13 +20,7 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.saveToTrack",
-        "onCommand:extension.changeTrack",
-        "onCommand:extension.editCurrentTrackName",
-        "onCommand:extension.showCurrentTrackHistory",
-        "onCommand:extension.clearAllHistoryFromCurrentTrack",
-        "onCommand:extension.clearOneHistoryFromCurrentTrack",
-        "onCommand:extension.clearAllHistoryFromAllTracks"
+        "*"
     ],
     "main": "./out/src/extension",
     "contributes": {

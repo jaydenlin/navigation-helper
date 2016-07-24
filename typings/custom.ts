@@ -15,3 +15,9 @@ interface Track {
     detail: string,
     recordCount:number
 }
+
+interface HistoryOperationOption {
+    description: string, 
+    label: string, 
+    detail: string
+}
