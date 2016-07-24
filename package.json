@@ -2,7 +2,7 @@
     "name": "navigation-helper",
     "displayName": "Navigation Helper",
     "description": "Trace codes easily with recorded tracks of related files",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "jaydenlin",
     "engines": {
         "vscode": "^1.0.0"

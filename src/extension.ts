@@ -76,7 +76,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     let disposableShowCurrentTrackHistory = vscode.commands.registerCommand('extension.showCurrentTrackHistory', () => {     
         console.log(tracks[currentTrackIndex].history);
-        vscode.window.showQuickPick(tracks[currentTrackIndex].history,{ placeHolder : 'Select a item from '+currentTrackDisplay()+' to navigate to',matchOnDetail:true,matchOnDescription:true}).then(val=> {
+        vscode.window.showQuickPick(tracks[currentTrackIndex].history,{ placeHolder : 'Select an item from '+currentTrackDisplay()+' to navigate to',matchOnDetail:true,matchOnDescription:true}).then(val=> {
             navigateToFile(val.filePath,val.lineNumber);
             
             //saveWorkspaceState(context,STATE_KEY,{navigationHistories:navigationHistories});  
@@ -93,7 +93,7 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     let disposableClearOneHistoryFromCurrentTrack = vscode.commands.registerCommand('extension.clearOneHistoryFromCurrentTrack', () => {   
-        vscode.window.showQuickPick(tracks[currentTrackIndex].history,{placeHolder : 'Select a item from '+currentTrackDisplay()+' to delete',matchOnDetail:true,matchOnDescription:true}).then(val=> {        
+        vscode.window.showQuickPick(tracks[currentTrackIndex].history,{placeHolder : 'Select an item from '+currentTrackDisplay()+' to delete',matchOnDetail:true,matchOnDescription:true}).then(val=> {        
              tracks[currentTrackIndex].history = tracks[currentTrackIndex].history.filter((h)=>{
                 //Case 1. diffrent files
                 if(h.filePath !== val.filePath){
@@ -134,7 +134,7 @@ function initEmptyTracks() {
            history : [],  
            description : '', 
            label : '[ Track '+i+' ]', 
-           detail : 'Select the track and switch to it!',
+           detail : 'Select the track and switch to it',
            recordCount: 0
         }
     }
