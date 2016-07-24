@@ -163,11 +163,6 @@ function saveToTrack(tracks:Array<Track>) {
             //if the new history was already in the Histroy, we will ignore it.
             if( val.filePath ===  newHistory.filePath && val.lineNumber === newHistory.lineNumber){
                 isRecorded = true;
-                console.log(val.filePath);
-                console.log(newHistory.filePath);
-                console.log(val.lineNumber);
-                console.log(newHistory.lineNumber);
-                console.log(tracks[currentTrackIndex].history);
             }
         });
         if(!isRecorded){

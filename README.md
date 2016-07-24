@@ -1,20 +1,27 @@
 # [Navigation Helper](https://github.com/jaydenlin/navigation-helper) 
-> Trace codes easily with recorded tracks of related files in [Visual Studio Code](https://code.visualstudio.com/)!
+> Trace codes easily with recording lines in files of each track in [Visual Studio Code](https://code.visualstudio.com/)!
 
 ```
 ext install navigation-helper
 ```
   
-## Concept
-Developers offen trace codes back and forth in the editor, 
-but without an effient way to `record the tracks of opened/related files`.    
+## Background 
 
-For exmaple, for tracing `Bug 111`, you may open several files like `File 1`, `File 3` ... etc and look aroud.   
-But you fail to find the root cause. Then, suddenly you get a ticket about `Bug 112` with high priority.  
+Developers offen trace codes back and forth with many files opened in the editor.  
+But `it's hard to remember all those files belongs to which track you're tracing`.  
+Especially, those files are in the same project folder.  
+
+For exmaple, for tracing `Bug 111`, you may open several files like `File 1`, `File 3` ... etc and do the study.   
+Then, suddenly you get a ticket about `Bug 112` with high priority, then you open `File 3`,`File 2` amd `File 22` to trace the root cause.  
 Also, you might have `Feature 11` and `Feature 12` in the sprint backlog...
 
-It's tedious to record the related files manully. Like the following image shows.  
+The following image illustrates the related files of each track (`Bug 111`,`Bug 112`,`Feature 11` and `Feature 12`)  
+* It's tedious to record the related files manully on paper. 
+* It's time-consuming to navigate to those files, if you write down it on paper.  
+   
 <img src="http://i.imgur.com/f8HceeJr.png" width="500"/>
+
+## Concept
 
 This extension helps you organize the file list into `track-based` in the editor.   
 We called `Bug 111` as a `Track`, and called `File 1`, `File 3` ... etc as a `History`.    
@@ -25,6 +32,7 @@ We called `Bug 111` as a `Track`, and called `File 1`, `File 3` ... etc as a `Hi
 2. Add/Delete related files (History) into/from a track with ease.
 3. Use `Quick Pick Selecter` to show related files of a track, and easy to navigate to them
 4. Use `Quick Pick Selecter` to show tracks, and easy to switch between them
+
 
 ## Demo
 ### 1. Add a file (`History`) into current `Track`  
