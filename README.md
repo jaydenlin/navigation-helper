@@ -12,13 +12,13 @@ But `it's hard to remember all those files belongs to which track you're tracing
 Especially, those files are in the same project folder.  
 
 For exmaple, for tracing `Bug 111`, you may open several files like `File 1`, `File 3` ... etc and do the study.   
-Then, suddenly you get a ticket about `Bug 112` with high priority, then you open `File 3`,`File 2` amd `File 22` to trace the root cause.  
+Then, suddenly you get a ticket about `Bug 112` with high priority, then you open `File 3`,`File 2` and `File 22` to trace the root cause.  
 Also, you might have `Feature 11` and `Feature 12` in the sprint backlog...
 
 The following image illustrates the related files of each track (`Bug 111`,`Bug 112`,`Feature 11` and `Feature 12`)  
 * It's tedious to record the related files manully on paper. 
 * It's time-consuming to navigate to those files, if you write down it on paper.  
-   
+     
 <img src="http://i.imgur.com/f8HceeJr.png" width="500"/>
 
 ## Concept
