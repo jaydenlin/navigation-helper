@@ -1,8 +1,8 @@
 {
     "name": "navigation-helper",
     "displayName": "Navigation Helper",
-    "description": "Trace codes easily with recording lines in files of each track, and navigate to them within seconds",
-    "version": "1.0.7",
+    "description": "Trace codes easily by recording lines in files of each track, and navigate to them within seconds",
+    "version": "1.0.8",
     "publisher": "jaydenlin",
     "engines": {
         "vscode": "^1.0.0"

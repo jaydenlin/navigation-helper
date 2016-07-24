@@ -9,7 +9,7 @@ ext install navigation-helper
 
 Developers offen trace codes back and forth with many files opened in the editor.  
 But `it's hard to remember all those files belong to which track you're tracing`.  
-Especially, those files are in the same project folder.  
+Especially, you're tracing multiple tracks and those files are in the same project folder.  
 
 For exmaple, for tracing `Bug 111`, you may open several files like `File 1`, `File 3` ... etc and do the study.   
 Then, suddenly you get a ticket about `Bug 112` with high priority, then you open `File 3`,`File 2` and `File 22` to trace the root cause.  
