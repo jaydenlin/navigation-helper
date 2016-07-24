@@ -66,6 +66,8 @@ export function activate(context: vscode.ExtensionContext) {
                 val = '';
             }
             editTrackName(currentTrackIndex,val);
+            //save state
+            saveWorkspaceState(context,STATE_KEY,{tracks:tracks});
             //show current track on status bar
             vscode.window.setStatusBarMessage(currentTrackDisplay());  
 
